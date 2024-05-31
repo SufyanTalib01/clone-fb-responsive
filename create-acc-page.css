@@ -1,0 +1,211 @@
+
+:root{
+    --color1:  #606783;
+}
+
+
+
+.c-account{
+   
+    width: 371px;
+    background-color: white;
+    position: fixed;
+    /* top: 9%;
+    left: 34%; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    z-index: 2;
+    font-family: Helvetica, sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    display: none;
+}
+
+/* SIGN UP  */
+.signup-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.signup-btn i{
+    font-size: 25px;
+    color: #606771;
+}
+.sign-up span{
+    color: #606783;
+    font-size: 13px;
+}
+
+#remove-btn{
+    cursor: pointer;
+}
+
+hr{
+    margin-inline: -15px;
+    margin-block: 11px;
+    background-color: #9496a1;
+    opacity: 0.3;
+}
+
+/* INPUT 1  */
+.inp-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inp-1 input{
+    width: 43.5%;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(217, 210, 210);
+    background-color: #F5F6F7;
+}
+.d-o-b{
+    font-size: 11px;
+    margin-left: 2px;
+    margin-top: 8px;
+    color: var(--color1);
+}
+.d-o-b i{
+    margin-left: 3px;
+}
+/* INPUT 2  */
+.inp-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inp-2 select{
+    width: 32%;
+    padding-inline: 5px;
+    padding-block: 9px;
+    margin-block: 4px;
+    border: 1px solid  rgb(217, 210, 210);
+    outline: none;
+    border-radius: 5px;
+}
+
+/* GENDER INPUT */
+.gen{
+    font-size: 11px;
+    margin-left: 2px;
+    margin-top: 8px;
+    color: var(--color1);
+}
+.gen i{
+    margin-left: 3px;
+}
+.gen-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gen-div div{
+    border: 1px solid black;
+    width: 27%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 8px;
+    padding-block: 9px;
+    margin-block: 4px;
+    color: #5d678e;
+    border-radius: 5px;
+    border: 1px solid  rgb(217, 210, 210);
+}
+.gen-div span{
+    font-size: 13px;
+}
+
+/* CUSTOM GENDER  */
+#custom-gen{
+    height: 33px;
+    margin-top: 7px;
+    outline: none;
+    border: 1px solid  rgb(217, 210, 210);
+    width: 100%;
+    padding-inline: 5px;
+    display: none;
+}
+.gen-span{
+    font-size: 10px;
+    color: var(--color1);
+    margin-top: 5px;
+    display: none;
+}
+
+/* EMAIL PASSWORD INPUT  */
+.e-p-field{
+    width: 96%;
+    display: block;
+    margin-block: 5px;
+    height: 33px;
+    padding-inline: 5px;
+    background-color: #F5F6F7;
+    border: 1px solid rgb(217, 210, 210);
+    border-radius: 5px;
+    outline: none;
+}
+.e-p-field:focus{
+    
+    border: none;
+}
+
+#gender-opt{
+    display: none;
+}
+
+/* DESCRIPTION  */
+.c-account p{
+    font-size: 10px;
+    margin-block: 10px;
+    color: var(--color1);
+}
+
+.bttn{
+    display: flex;
+    justify-content: center;
+}
+.c-account button{
+   width: 50%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: #00A400;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-block: 10px;
+}
+.c-account button:hover{
+    background-color: #6a9e5d;
+    cursor: pointer;
+}
+
+
+
+/* JAVASCRIPT */
+
+.c-account.active{
+    display: block;
+}
+
+
+#custom-gen.active{
+    display: block;
+}
+#gen-span.active{
+    display: block;
+}
+#gender-opt.active{
+    display: block;
+}
+
+/* #c-account.active{
+    display: none;
+} */

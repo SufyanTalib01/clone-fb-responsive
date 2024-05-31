@@ -1,0 +1,130 @@
+@media (max-width: 850px) {
+.main-container{
+    display: none;
+}
+*{
+    font-family: "Roboto", sans-serif;
+}
+.footer{
+    display: none;
+}
+.Mobile-Container{
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-block: 10px;
+    background-color: #f0f2f5;
+}
+.Mobile-Container img{
+    height: 60px;
+}
+.eng-span{
+    font-size: 12px;
+    color: #708691;
+}
+/* LOGIN PAGE DETAILS   */
+/* !------------------------------------- */
+.login-page{
+   /*  margin-top: -60px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: rgba(255, 255, 255, .5); */
+}
+/* !------------------------------------- */
+
+.login-page form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-page input{
+    margin-block: 7px;
+    width: 88%;
+    height: 55px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: 1px solid gray;
+    color: #dce0e4; 
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+.login-page input::placeholder{
+    color: #c7c7c8;
+}
+
+.login-page input:focus{
+    color: black;
+    outline: none;
+    border: 1px solid rgb(141, 136, 136);
+  
+}
+
+.login-page button{
+    margin-block: 8px;
+    width: 88%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #0064E0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login-page a{
+    color: black;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+
+/* BOTTOM DATA  */
+
+.bottom-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: green; */
+    height: 100px;
+}
+.bottom-container button{
+    height: 37px;
+    width: 90%;
+    border-radius: 20px;
+    border: 0.5px solid gray;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    background-color: white;
+    cursor: pointer;
+   
+}
+
+.bottom-container img{
+    height: 11px;
+    opacity: 0.7;
+    
+}
+
+.bottom-container ul{
+    display: flex;
+}
+.bottom-container ul li{
+    list-style: none;
+    margin-left: 10px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.bottom-container ul li:hover{
+    text-decoration: underline;
+}
+
+}  
