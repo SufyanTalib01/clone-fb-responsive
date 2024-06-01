@@ -1,6 +1,12 @@
 .Mobile-Container{
     display: none;
 }
+.m-forget-container{
+    display: none;
+}
+.d-forget-container{
+    display: none;
+}
 
 *{
     margin: 0;
@@ -15,6 +21,9 @@
     justify-content: center;
     align-items: center;
     background-color: #f0f2f5;
+    
+ 
+    
 }
 
 /* DATA CONTAINER  */

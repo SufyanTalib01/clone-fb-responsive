@@ -1,0 +1,73 @@
+@media (max-width: 850px) {
+body{
+    background-image: linear-gradient(to bottom right , #FEF6F5 5% , #FCF3F8 10% , rgb(254, 246, 245) 5%, #EEF6FE 80%);
+    height: 100vh;
+    width: 100%;
+}
+
+.m-forget-container{
+    display: flex;
+    flex-direction: column;
+    padding-block: 10px;
+    padding-inline: 20px;
+    display: none;
+}
+
+.m-forget-container a i{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 15px;
+    margin-left: -5px;   
+}
+
+.m-forget-container h2{
+    margin-bottom: 10px;
+}
+
+
+
+/* FORGET PAGE  */
+
+.forget-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.forget-page input{
+    margin-top: 20px;
+    margin-bottom: 14px;
+    width: 95%;
+    height: 55px;
+    border-radius: 10px;
+    padding-left: 15px;
+    border: 1px solid rgb(207, 204, 204);
+    color: #dce0e4; 
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+.forget-page input::placeholder{
+    color: #c7c7c8;
+}
+
+.forget-page input:focus{
+    color: black;
+    outline: none;
+    border: 1px solid rgb(141, 136, 136);
+  
+}
+
+.forget-page button{
+    margin-block: 6px;
+    width: 100%;
+    height: 43px;
+    border-radius: 20px;
+    background-color: #0064E0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+}

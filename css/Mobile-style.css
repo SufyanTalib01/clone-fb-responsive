@@ -2,6 +2,9 @@
 .main-container{
     display: none;
 }
+.d-forget-container{
+    display: none;
+}
 *{
     font-family: "Roboto", sans-serif;
 }
@@ -17,7 +20,9 @@
     align-items: center;
     box-sizing: border-box;
     padding-block: 10px;
-    background-color: #f0f2f5;
+    background-image: linear-gradient(to bottom right , #FEF6F5 5% , #FCF3F8 10% , rgb(254, 246, 245) 5%, #EEF6FE 80%);
+    gap: 45px;
+    /* display: none; */
 }
 .Mobile-Container img{
     height: 60px;
@@ -68,7 +73,7 @@
 }
 
 .login-page button{
-    margin-block: 8px;
+    margin-block: 6px;
     width: 88%;
     height: 40px;
     border-radius: 20px;
@@ -76,6 +81,7 @@
     color: white;
     border: none;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .login-page a{
@@ -83,6 +89,9 @@
     font-size: 14px;
     letter-spacing: 0.4px;
 }
+
+/* EMPTY DIV  */
+
 
 /* BOTTOM DATA  */
 

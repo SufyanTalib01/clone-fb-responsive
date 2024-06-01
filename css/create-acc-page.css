@@ -92,6 +92,8 @@ hr{
 }
 
 /* GENDER INPUT */
+
+
 .gen{
     font-size: 11px;
     margin-left: 2px;
@@ -118,11 +120,16 @@ hr{
     border-radius: 5px;
     border: 1px solid  rgb(217, 210, 210);
 }
-.gen-div span{
+.gen-div label{
     font-size: 13px;
 }
 
 /* CUSTOM GENDER  */
+
+.invisible-container{
+    display: none;
+}
+
 #custom-gen{
     height: 33px;
     margin-top: 7px;
@@ -130,13 +137,13 @@ hr{
     border: 1px solid  rgb(217, 210, 210);
     width: 100%;
     padding-inline: 5px;
-    display: none;
+    /* display: none; */
 }
 .gen-span{
     font-size: 10px;
     color: var(--color1);
     margin-top: 5px;
-    display: none;
+    /* display: none; */
 }
 
 /* EMAIL PASSWORD INPUT  */
@@ -157,7 +164,7 @@ hr{
 }
 
 #gender-opt{
-    display: none;
+    /* display: none; */
 }
 
 /* DESCRIPTION  */
@@ -189,10 +196,12 @@ hr{
 
 
 
+
 /* JAVASCRIPT */
 
 .c-account.active{
     display: block;
+    
 }
 
 
@@ -206,6 +215,14 @@ hr{
     display: block;
 }
 
-/* #c-account.active{
-    display: none;
-} */
+#main-container.active{
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+#footer.active{
+    opacity: 0.3;
+    pointer-events: none;
+}
+/* MAEL CEHCL */
+

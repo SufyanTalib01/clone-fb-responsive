@@ -8,14 +8,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Bree+Serif&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/b69ee90ce9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="Mobile-style.css">
-    <link rel="stylesheet" href="create-acc-page.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/Mobile-style.css">
+<link rel="stylesheet" href="css/create-acc-page.css">
+<link rel="stylesheet" href="css/ForgetforMBL.css">
+<link rel="stylesheet" href="css/ForgetforDesktop.css">
+
 </head>
 
 <body>
 
+    <!-- FORGET FOR DESKTOP MODE -->
+    <div class="d-forget-container">
+        <div class="nav-bar">
+            <div class="left-nav">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <div class="right-nav">
+                <input type="text" placeholder="Email or phone">
+                <input type="text" placeholder="password">
+                <button>Log in</button>
+                <a >Forgotten account?</a>
+            </div>
+        </div>
+        <div class="d-data">
+            <h3>Find Your Account</h3>
+            <hr/>
+            <p>Please enter your email address or mobile number to search for your account</p>
+            <input type="text" placeholder="Enter email address or mobile number">
+            <hr/>
+            <div class="df-btn">
+                <button class="df-btn1" >Cancel</button>
+                <button class="df-btn2">Search</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- FORGET PASSWORD FOR MOBILE DEVICE  -->
+    <div class="m-forget-container">
+        <a href=""><i class="fa-solid fa-chevron-left"></i></a>
+        <h2>Find your account</h2>
+        <span>Enter your mobile number or email address</span>
+        <div class="forget-page">
+            <input type="text" placeholder="Mobile number or email address">
+            <button>Continue</button>
+        </div>
+    </div>
     <!-- FIXED CREATE ACCOUNT PAGE  -->
     <div class="c-account" id="c-account">
         <div class="sign-up">
@@ -62,7 +100,7 @@
             <option value="">27</option>
             <option value="">28</option>
             <option value="">29</option>
-            <option value="">30</option>
+            <option value="" selected>30</option>
             <option value="">31</option>
            </select>
 
@@ -102,26 +140,31 @@
         <span class="gen">Gender<i class="fa-solid fa-circle-question"></i></span>
         <div class="gen-div">
             <div>
-                <span>Male</span>
+                <label for="male-check">Male</label>
                 <input type="radio" id="male-check" checked="checked" name="radio">
             </div>
             <div>
-                <span>Female</span>
+                <label for="female-check">Female</label>
                 <input type="radio" id="female-check" name="radio">
             </div>
             <div>
-                <span>Custom</span>
+                <label for="custom-check">Custom</label>
                 <input type="radio" name="radio" id="custom-check">
             </div>
         </div>
-        <select name="" id="custom-gen">
-            <option value="">Select your pronoun</option>
-            <option value="">She: "Wish her a happy birthday!"</option>
-            <option value="">He: "Wish him a happy birthday!"</option>
-            <option value="">Them: "Wish them a happy birthday!"</option>
-        </select>
-        <span class="gen-span" id="gen-span">Your pronoun is visible to everyone</span>
-        <input type="text" class="e-p-field" id="gender-opt" placeholder="Gender (Optional)">
+        <!-- GENDER VISIBLE INVISIBLE -->
+        <div class="invisible-container">
+            <select name="" id="custom-gen">
+                <option selected disabled value="">Select your pronoun</option>
+                <option value="" >She: "Wish her a happy birthday!"</option>
+                <option value="">He: "Wish him a happy birthday!"</option>
+                <option value="">Them: "Wish them a happy birthday!"</option>
+            </select>
+            <span class="gen-span" id="gen-span">Your pronoun is visible to everyone</span>
+            <input type="text" class="e-p-field" id="gender-opt" placeholder="Gender (Optional)">
+        </div>
+        <!-- GENDER VISIBLE INVISIBLE -->
+        
         <input type="text" class="e-p-field " placeholder="Mobile number or email address">
         <input type="text" class="e-p-field" placeholder="New password">
         <p>People who use our service may have uploaded your contact information to Facebook. Learn more.</p>
@@ -140,9 +183,9 @@
             <input type="password" placeholder="Password">
         </form>
         <button>Log in</button>
-        <a href="">Forgotten password?</a>
+        <a class="forget-pass" >Forgotten password?</a>
     </div>
-
+    <div class="empty-div"></div>
     <div class="bottom-container">
         <button>Create new account</button>
         <img src="img/meta.png" alt="">
@@ -156,7 +199,7 @@
     </div>
     </div>
     <!-- FOR WEB PAGE  -->
-    <div class="main-container">
+    <div class="main-container" id="main-container">
         <div class="data">
             <div class="left-data">
                 <img src="img/logo.svg" alt="">
@@ -177,7 +220,7 @@
             </div>
         </div>
     </div>
-    <div class="footer">
+    <div class="footer" id="footer">
         <div class="footer-data">
             <div class="language">
                 <p>English UK</p>
@@ -244,6 +287,7 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/b69ee90ce9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
