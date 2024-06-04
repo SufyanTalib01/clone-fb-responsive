@@ -11,7 +11,7 @@ let MaleCheck = document.querySelector('#male-check');
 let FemaleCheck = document.querySelector('#female-check');
 let ForgetPassWord = document.querySelector('.forget-pass');
 let MobileContainer = document.querySelector('.Mobile-Container');
-let ForgetContainer = document.querySelector('.m-forget-container');
+let MForgetContainer = document.querySelector('.m-forget-container');
 
 
 Btn.addEventListener("click" , function(){
@@ -81,5 +81,5 @@ FemaleCheck.addEventListener('click' , function(){
 // FOREGT PASSWORD 
 ForgetPassWord.addEventListener('click' , function(){
     MobileContainer.style.display = 'none';
-    ForgetContainer.style.display = 'block';
+    MForgetContainer.style.display = 'block';
 })

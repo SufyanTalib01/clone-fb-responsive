@@ -5,14 +5,22 @@ body{
     width: 100%;
 }
 
+.d-forget-container{
+    display: none;
+}
+.footer{
+    display: none;
+}
 .m-forget-container{
     display: flex;
     flex-direction: column;
     padding-block: 10px;
     padding-inline: 20px;
-    display: none;
+    
 }
-
+.m-forget-container a{
+    width: 0px;
+}
 .m-forget-container a i{
     font-size: 18px;
     color: black;
